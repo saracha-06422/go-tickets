@@ -8,3 +8,8 @@ type UserUseCase interface {
 	GetAllUser() (u []entity.User, err error)
 	CreateUser(u *entity.User) (err error)
 }
+
+type UserMemoryRepository interface {
+	GetAllUser() (u []entity.User, err error)
+	CreateUser(u *entity.User) (err error)
+}
